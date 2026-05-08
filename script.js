@@ -94,11 +94,23 @@ function createLightbox() {
 }
 
 function counterOfReaders() {
-    let cnt = localStorage.getItem('visitCount');
-    if (cnt === null) {cnt = 0};
-    cnt++;
-    localStorage.setItem('visitCount', cnt);
-    document.getElementById('counter').innerText = cnt;
+    const COUNTER_KEY = 'site_visits_total';
+    const SESSION_KEY = 'session_visited';
+    
+    const counterElement = document.getElementById('counter');
+    if (!counterElement) return;
+
+    let count = parseInt(localStorage.getItem(COUNTER_KEY)) || 0;
+
+    const alreadyVisited = sessionStorage.getItem(SESSION_KEY);
+    
+    if (!alreadyVisited) {
+        count++;
+        localStorage.setItem(COUNTER_KEY, count);
+        sessionStorage.setItem(SESSION_KEY, 'true');
+    }
+    
+    counterElement.textContent = count;
 }
 
 
