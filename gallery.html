@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея графиков — Прогнозирование траекторий</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="header-content">
+            <h1>Методы прогнозирования траектории движения</h1>
+            <p>Исследовательская работа | Вологодский государственный университет</p>
+        </div>
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="methods.html">Методы LSTM и GRU</a></li>
+            <li><a href="results.html">Результаты</a></li>
+            <li><a href="gallery.html" class="active">Галерея графиков</a></li>
+            <li><a href="references.html">Список используемых источников</a></li>
+            <li><a href="author.html">Об авторе</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <div class="fade-block">
+            <h2>Галерея графиков</h2>
+        </div>
+        <div class="fade-block">
+            <p>В данном разделе представлены визуальные материалы исследования: примеры траекторий, результаты прогнозирования и сравнительные графики для моделей LSTM и GRU. <strong>Кликните по карточке для полноэкранного просмотра.</strong></p>
+        </div>
+
+        <div class="gallery-wrapper">
+            <div class="gallery">
+                <div class="fade-block">
+                    <figure class="gallery-item">
+                        <img src="images/trajectories.png" alt="Примеры сгенерированных траекторий">
+                        <figcaption>
+                            <strong>Рисунок 1.</strong> Примеры синтетически сгенерированных траекторий движения цели в двумерном пространстве
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="fade-block">
+                    <figure class="gallery-item">
+                        <img src="images/LSTM_predictions.png" alt="10 лучших и 10 худших предсказаний LSTM">
+                        <figcaption>
+                            <strong>Рисунок 2.</strong> Выборка из 10 лучших и 10 худших предсказаний модели LSTM
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="fade-block">
+                    <figure class="gallery-item">
+                        <img src="images/GRU_predictions.png" alt="10 лучших и 10 худших предсказаний GRU">
+                        <figcaption>
+                            <strong>Рисунок 3.</strong> Выборка из 10 лучших и 10 худших предсказаний модели GRU
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="fade-block">
+                    <figure class="gallery-item">
+                        <img src="images/predictions_six_example.png" alt="6 случайных примеров прогнозов обеих моделей">
+                        <figcaption>
+                            <strong>Рисунок 4.</strong> 6 случайных примеров прогнозов для качественного сравнения моделей LSTM и GRU
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>
+                © 2026 Малов Н.С.
+                <a href="mailto:nik.malov.1990@mail.ru">Связаться с автором</a>
+            </p>
+            <p>
+                <a href="https://vogu35.ru/">Вологодский государственный университет</a> |
+                <a href="https://old.vogu35.ru/institut/imekn/kaf-pm">Кафедра прикладной математики</a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="scroll-top">↑</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
