@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     createLightbox();
-    counterOfReaders();
+    // counterOfReaders();
     
 });
 
@@ -93,25 +93,25 @@ function createLightbox() {
     });
 }
 
-function counterOfReaders() {
-    const COUNTER_KEY = 'site_visits_total';
-    const SESSION_KEY = 'session_visited';
+// function counterOfReaders() {
+//     const COUNTER_KEY = 'site_visits_total';
+//     const SESSION_KEY = 'session_visited';
     
-    const counterElement = document.getElementById('counter');
-    if (!counterElement) return;
+//     const counterElement = document.getElementById('counter');
+//     if (!counterElement) return;
 
-    let count = parseInt(localStorage.getItem(COUNTER_KEY)) || 0;
+//     let count = parseInt(localStorage.getItem(COUNTER_KEY)) || 0;
 
-    const alreadyVisited = sessionStorage.getItem(SESSION_KEY);
+//     const alreadyVisited = sessionStorage.getItem(SESSION_KEY);
     
-    if (!alreadyVisited) {
-        count++;
-        localStorage.setItem(COUNTER_KEY, count);
-        sessionStorage.setItem(SESSION_KEY, 'true');
-    }
+//     if (!alreadyVisited) {
+//         count++;
+//         localStorage.setItem(COUNTER_KEY, count);
+//         sessionStorage.setItem(SESSION_KEY, 'true');
+//     }
     
-    counterElement.textContent = count;
-}
+//     counterElement.textContent = count;
+// }
 
 
 function revealOnScroll() {
