@@ -793,3 +793,20 @@ ol.references-list li:last-child {
     border-radius: 0;
     vertical-align: middle;
 }
+
+
+a.ref-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    vertical-align: super;
+    margin-left: 1px;
+    transition: color 0.2s;
+}
+
+a.ref-link:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
