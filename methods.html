@@ -99,7 +99,8 @@
         <div class="fade-block">
             <p>
                 В работе рассматриваются два метода прогнозирования на основе рекуррентных нейронных сетей:
-                с использованием сети типа LSTM (Long Short-Term Memory) [1, 3] и сети типа GRU (Gated Recurrent Unit) [4, 5].
+                с использованием сети типа LSTM (Long Short-Term Memory) <a href="references.html#ref1" class="ref-link">[1]</a><a href="references.html#ref3" class="ref-link">[3]</a>
+                и сети типа GRU (Gated Recurrent Unit) <a href="references.html#ref4" class="ref-link">[4]</a><a href="references.html#ref5" class="ref-link">[5]</a>.
                 Обе архитектуры относятся к классу RNN и специально разработаны для работы с последовательными данными,
                 позволяя эффективно находить долгосрочные зависимости.
             </p>
@@ -163,14 +164,14 @@
         <div class="fade-block">
             <dl class="hyperparams">
                 <dt>Оптимизатор</dt>
-                <dd>Adam (Adaptive Moment Estimation) [6].</dd>
+                <dd>Adam (Adaptive Moment Estimation) <a href="references.html#ref6" class="ref-link">[6]</a>.</dd>
 
                 <dt>Скорость обучения (Learning Rate)</dt>
                 <dd>0.001.</dd>
 
                 <dt>Параметры оптимизатора Adam</dt>
                 <dd>
-                    Использованы значения по умолчанию в TensorFlow/Keras [7]:
+                    Использованы значения по умолчанию в TensorFlow/Keras :
                     <ul>
                         <li><code>beta_1 = 0.9</code> - коэффициент затухания для первого момента (среднего градиента);</li>
                         <li><code>beta_2 = 0.999</code> - коэффициент затухания для второго момента (нецентрированной дисперсии градиента);</li>
