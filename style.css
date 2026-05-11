@@ -778,3 +778,18 @@ ol.references-list li a:hover {
 ol.references-list li:last-child {
     margin-bottom: 0;
 }
+
+
+.counter-informer {
+    text-align: left;
+    font-size: 0.95em;
+    color: #ecf0f1;
+}
+
+.counter-informer img {
+    display: inline;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    vertical-align: middle;
+}
