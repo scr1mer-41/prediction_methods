@@ -814,8 +814,7 @@ a.ref-link:hover {
 a.fig-link {
     color: #3498db;
     text-decoration: none;
-    font-weight: 500;
-    border-bottom: 1px dashed #27ae60;
+    font-weight: bold;
     transition: color 0.2s, border-color 0.2s;
 }
 a.fig-link:hover {
